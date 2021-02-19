@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width initial-scale=1.0'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <title>Socket Chat</title>
     <link rel="stylesheet" href="/style.css" />
     <script defer src="/bundle.js"></script>
   </head>
   <body>
     <div id="entry">
-      <form id='entry-form'>
-        <input type='text' id='username'>
-        <input type='text' id='chat-room-name'>
-        <button id='entry-button' type="submit">Enter Chat</button>
+      <form id="entry-form">
+        <label htmlFor="username"
+          >username <input type="text" id="username"
+        /></label>
+        <label htmlFor="chat-room-name"
+          >Chat Room Name<input type="text" id="chat-room-name"
+        /></label>
+        <button id="entry-button" type="submit">Enter Chat</button>
       </form>
     </div>
-    <div id='chat-room' style='display:none'>
-      <form id='chat-form'>
-        <select id='participants-select'></select>
-        <textarea id='message'></textarea>
-        <button id='send-button' type='submit' disabled>Send</button>
+    <div id="chat-room" style="display: none">
+      <form id="chat-form">
+        <label
+          >Select Recipient
+          <select id="participants-select"></select
+        ></label>
+        <label>Message<textarea id="message"></textarea></label>
+        <button id="send-button" type="submit" disabled>Send</button>
       </form>
-      <div id='chat-messages'></div>
+      <div id="chat-messages"></div>
     </div>
   </body>
 </html>
-

@@ -19,7 +19,6 @@ const enterChatRoom = (serverSocket, serverIO, username, chatRoomName) => {
 
 // Callback invoked when serverSocket is about to disconnect
 const leaveChatRoom = (serverSocket, serverIO) => {
-  console.log(chatRooms)
   for (let chatRoomName of Object.keys(chatRooms)) {
     let participants = chatRooms[chatRoomName]
     // Find any chat rooms that serverSocket belonged to
