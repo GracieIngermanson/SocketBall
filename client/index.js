@@ -31,7 +31,7 @@ entryButton.addEventListener('click', event => {
 })
 
 const appendMessage = (sender, recipient, message) => {
-  chatMessages.innerHTML += `<p><strong>${sender} (to: &nbsp${recipient})</strong>: ${message}</p>`
+  chatMessages.innerHTML += `<p><strong>${sender} (to &nbsp${recipient})</strong>: ${message}</p>`
 }
 
 const submitMessage = event => {
