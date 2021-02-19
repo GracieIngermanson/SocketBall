@@ -19,3 +19,15 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+#chat-room {
+  flex-direction: row;
+  align-items: center;
+}
+
+#chat-messages {
+  display: block;
+  width: 50%;
+  height: 800px;
+  overflow: scroll;
+}
